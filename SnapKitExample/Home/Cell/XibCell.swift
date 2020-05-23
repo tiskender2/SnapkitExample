@@ -26,8 +26,6 @@ class XibCell: UITableViewCell {
     func setCell(model:Result){
           print(Constant.shared.imageUrl+(model.posterPath ?? ""))
           setImg(image: imageMovie, imgLink: Constant.shared.imageUrl+(model.posterPath ?? ""))
-         // let url = URL(string: Constant.shared.imageUrl+(model.posterPath ?? ""))
-          //imageMovie.kf.setImage(with: url)
           titleMovie.text = model.title
           descMovie.text = model.overview
       }

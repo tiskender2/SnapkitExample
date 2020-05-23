@@ -56,7 +56,6 @@ extension SnapKitCell {
             make.bottom.equalTo(contentView).inset(6)
         }
         addViewToStackView(stackView: stackView)
-        
     }
     fileprivate func addViewToStackView(stackView:UIStackView) {
         stackView.addArrangedSubview(setupImageView())
@@ -77,7 +76,6 @@ extension SnapKitCell {
         movieImage.snp.makeConstraints { (make) in
             make.edges.equalTo(view)
         }
-        
         return view
     }
    fileprivate func setupTitleView() -> UIView {
